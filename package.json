@@ -1,0 +1,18 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "crud para agregar especialidad y categorias de entrevista y otros elementos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "IVGC",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
