@@ -1,13 +1,17 @@
 const {PORT}=require("./config/config");
-
+const {db}=require("./config/database");
 const express= require("express");
 
 const server=express();
 
-server.listen(PORT, () =>  {
-    console.log(`server is running at ${PORT}`);
+db.authenticate().then(()=>{
+    server.listen(PORT, () =>  {
+        console.log(`server is running at ${PORT}`);
+    
+    });
+});
 
- });
+
 
 
 
